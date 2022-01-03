@@ -2,9 +2,317 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Mazurov Alexander" />
+    <meta name="keywords" content="React, HTML, CSS, SPA" />
+    <meta name="author" content="Mazurov Alexander" />
+    <title>Personal Portfolio Mazurov A.V.</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<header>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a class="active"
+                       href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#code">Code Examples</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <input type="checkbox"
+                       class="check-menu" />
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="scroll-up-btn">
+        &#8679;
+    </div>
+
+    <!-- home section start -->
+    <section class="home"
+             id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <h1 class="text-2">Mazurov Alexander</h1>
+                <div class="text-3">And I'm a frontend developer<span class="typing"></span></div>
+                <a href="#">Hire me</a>
+            </div>
+        </div>
+    </section>
+</header>
+
+<main>
+    <!-- about me section start -->
+    <section class="about"
+             id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/IMG_ME.jpg"
+                         alt="I am">
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Mazurov Alexander.<span class="typing-2"></span></div>
+                    <p>I started my acquaintance with frontend technologies by studying HTML Academy courses.
+                        Passed interactive courses in HTML, CSS and JS. In 2020, I enrolled in the IT-INCUBATOR on-line
+                        courses,
+                        where I studied React library in depth, Redux, as well as building the application architecture,
+                        unit test.</p>
+                    <a href="#">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills section start -->
+    <section class="skills"
+             id="skills">
+        <div class="max-width">
+            <h2 class="title">My skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My creative skills & experiences.</div>
+                    <p>I am studying at the web-developer school.</p>
+                    <a href="#">Read more</a>
+                </div>
+                <ul class="column right">
+                    <li class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </li>
+                    <li class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </li>
+                    <li class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </li>
+                    <li class="bars">
+                        <div class="info">
+                            <span>React</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="line react"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code examples section start -->
+    <section class="code-examples"
+             id="code">
+        <div class="max-width">
+            <h2 class="title">Code Examples</h2>
+            <div class="about-content">
+                <pre>
+                    <code>
+                    const moveZeros = <span class="func">function</span> (arr) {
+                        let countZero = [];
+                        let newArr = [];
+                            <span class="for">for</span> (let item of arr) {
+                                <span class="if">if</span> (item === 0) {
+                                countZero.push(item);
+                                } else {
+                                    newArr.push(item)
+                                    }
+                                }
+                        return newArr = [...newArr, ...countZero]
+                    }
+
+                    <span class="func">function</span> createPhoneNumber(numbers) {
+                        return `(${numbers.slice(0,3).join('')}) ${numbers.slice(3,6).join('')}-${numbers.slice(6).join('')}`
+                        }
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section start -->
+    <section class="projects"
+             id="projects">
+        <div class="max-width">
+            <h2 class="title">Projects</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <a href="https://github.com/almazglobal/almazglobal.github.io">
+                        <div class="box">
+                            <i class="fas fa-paint-brush"></i>
+                            <div class="text">Adaptive authorization form</div>
+                            <p>If authorization is successful, display a block with the user's avatar and name.
+                                If authorization failed, display a block with the error text.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/almazglobal/social-network">
+                        <div class="box">
+                            <i class="fas fa-chart-line"></i>
+                            <div class="text">Social network</div>
+                            <p>This is a project in the process of writing. Developed on the React library</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/almazglobal/counter-advanced">
+                        <div class="box">
+                            <i class="fas fa-code"></i>
+                            <div class="text">Counter advanced</div>
+                            <p>A mini application developed on React. You can configure the limit threshold</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education section start -->
+    <section class="teams"
+             id="education">
+        <div class="max-width">
+            <h2 class="title">Education</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="images/university.png"
+                             alt="">
+                        <div class="text">2000 – 2005 : Samara State University</div>
+                        <p> Faculty for Mathematics and Mechanics Specialization:
+                            The organization and security technology of the information</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/web-school.png"
+                             alt="">
+                        <div class="text">2021 - present</div>
+                        <p>Web school It-Incubator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="languages"
+             id="languages">
+        <div class="max-width">
+            <h2 class="title">Languages</h2>
+            <div class="language">
+                <span>&#10004; Russian - native language</span>
+                <span>&#10004; English - A2 (Pre-Intermediate)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section start -->
+    <section class="contact"
+             id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <ul class="icons">
+                        <li class="row">
+                            <span>&#10004;</span>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Mazurov Alexander</div>
+                            </div>
+                        </li>
+                        <li class="row">
+                            <span>&#10004;</span>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Russia, Samara city</div>
+                            </div>
+                        </li>
+                        <li class="row">
+                            <span>&#10004;</span>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">almazlocal@gmail.com</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text"
+                                       placeholder="Name"
+                                       required>
+                            </div>
+                            <div class="field email">
+                                <input type="email"
+                                       placeholder="Email"
+                                       required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text"
+                                   placeholder="Subject"
+                                   required>
+                        </div>
+                        <div class="field textarea">
+                        <textarea cols="30"
+                                  rows="10"
+                                  placeholder="Message.."
+                                  required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- footer section start -->
+<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__inner--top">
+            <ul class="footer__links">
+                <li class="footer__item"><a class="footer__link footer__link--rsschool" href="https://rs.school/js/"></a></li>
+                <li class="footer__item"><span>Created By Mazurov A.V.</span></li>
+                <li class="footer__item"><a class="footer__link footer__link--github"
+                                            href="https://github.com/almazglobal"></a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
